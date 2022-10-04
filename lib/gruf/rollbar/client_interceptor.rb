@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'pry'
-
 module Gruf
   module Rollbar
     ##
@@ -21,11 +19,12 @@ module Gruf
         rescue StandardError, GRPC::BadStatus => e
           if error?(e) # only capture
             ::Rollbar.scoped({
-                              grpc_method_name: request_context.method_name,
-                              grpc_route_key: request_context.route_key,
-                              grpc_error_code: code_for(e),
-                              grpc_error_class: e.class.name
-                            }) do
+                               grpc_method_name: request_context.method_name,
+                               grpc_route_key: request_context.route_key,
+                               grpc_call_type: request_context.type,
+                               grpc_error_code: code_for(e),
+                               grpc_error_class: e.class.name
+                             }) do
               ::Rollbar.error(e)
             end
           end

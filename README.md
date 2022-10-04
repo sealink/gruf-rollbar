@@ -37,7 +37,7 @@ To automatically report errors in your Gruf clients, pass the client interceptor
 Gruf::Client.new(
   service: MyService,
   client_options: {
-    interceptors: [Gruf::ROLLBAR::ClientInterceptor.new]
+    interceptors: [Gruf::Rollbar::ClientInterceptor.new]
   }
 )
 ```
