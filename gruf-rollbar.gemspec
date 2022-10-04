@@ -7,8 +7,8 @@ require 'gruf/rollbar/version'
 Gem::Specification.new do |spec|
   spec.name          = 'gruf-rollbar'
   spec.version       = Gruf::Rollbar::VERSION
-  spec.authors       = ['Shaun McCormick']
-  spec.email         = ['splittingred@gmail.com']
+  spec.authors       = ['Sealink']
+  spec.email         = ['john.zhao@kelsian.com']
   spec.license       = 'MIT'
 
   spec.summary       = %q{Automatically report gruf failures as rollbar errors}
