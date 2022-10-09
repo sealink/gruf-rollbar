@@ -1,7 +1,7 @@
 # gruf-rollbar - Rollbar reporting for gruf
 
 Adds Rollbar error reporting support for [gruf](https://github.com/bigcommerce/gruf) 2.7.0+
-and [sentry-ruby](https://github.com/rollbar/rollbar-gem)
+and [rollbar](https://github.com/rollbar/rollbar-gem)
 
 This gem will automatically report grpc failures and Gruf errors into Rollbar as they happen in servers and clients.
 
