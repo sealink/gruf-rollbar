@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- [PLAT-1175] Update to Ruby 3.2
+
 ## 0.0.2
 
 - [PLAT-816] Fix github action
